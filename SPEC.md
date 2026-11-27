@@ -74,3 +74,8 @@ Every authenticated caller resolves server-side to a `StaffMember` belonging to 
   ┌─────────────┐
   │    Paid     │ (Terminal)
   └─────────────┘
+
+---
+## 3. Specification Revision Log
+* **v1.0 (Initial):** Saved prior to implementation in `SPEC_INITIAL.md`.
+* **v1.1 (Post-Implementation Review):** No changes to business rules, state transitions, permissions, or monetary invariants were required during implementation. Clarified in implementation that `demo_client.py` writes to an isolated `demo_assistance.db` file (configurable via `ASSISTANCE_DB_PATH`) so running the demo does not overwrite a developer's default `assistance.db`.
